@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <title>DaddyBusted - Aplicație Scanare Coduri de Bare</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        .daddybusted-logo {
+            width: 30px; /* Ajustează dimensiunea imaginii */
+            height: 50px; /* Menține proporțiile */
+            object-fit: cover; /* Ajustează imaginea fără distorsiuni */
+            margin-left: 30px; /* Spațiu între titlu și imagine */
+            border-radius: 30%; /* Rotunjirea marginilor */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adaugă un efect de umbră */
+            transition: transform 0.3s ease; /* Adaugă o tranziție pe hover */
+        }
+
+        .daddybusted-logo:hover {
+            transform: scale(1.2); /* Mărește imaginea pe hover */
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .gallery .image-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery img {
+            width: 70%;
+            height: auto;
+            border-radius: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 20px solid transparent;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery .image-wrapper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 10px solid #fff;
+            border-radius: 20px;
+            background-image: url('img/screenshot-frame.png');
+            background-size: cover;
+            background-position: center;
+            pointer-events: none;
+        }
+
+        .download-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .download-button {
+            background: #8F12FD;
+            color: white;
+            padding:4px 8px;
+            border-radius: 150px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            border: 10px solid transparent;
+        }
+
+        .download-button:hover {
+            transform: scale(1.1);
+            
+        }
+
+        .download-button img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Navbar Start -->
+        <div class="container-xxl position-relative p-0" id="home">
+            <<nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand p-0 d-flex align-items-center">
+                        <h1 class="m-0">DaddyBusted</h1>
+                        <img src="img/daddybusted.png" alt="Logo DaddyBusted" class="daddybusted-logo ms-2">
+                    </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#screenshots" class="nav-item nav-link">Galerie</a>
+                        <a href="#about" class="nav-item nav-link">Află Mai Multe</a>
+                        <a href="#privacy" class="nav-item nav-link">Politica de Confidențialitate</a>
+                    </div>
+                    <!-- Butonul de descărcare existent -->
+                    <a href="https://play.google.com/store/apps/details?id=com.tatilacratita.daddybusted" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Descarcă App</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Hero Section Start -->
+        <div class="container-xxl bg-primary hero-header">
+            <div class="container px-lg-5">
+                <div class="row g-5">
+                    <div class="col-lg-8 text-center text-lg-start">
+                        <h1 class="text-white mb-4 animated slideInDown">DaddyBusted - Partenerul Tău La Cumparături😉</h1>
+                        <p class="text-black pb-4 animated slideInDown" style="color: #000000;font-weight: bold;">
+                            **DaddyBusted** este aplicația simpla care îți permite să scanezi rapid codurile de bare ale produselor (ne)alimentare. 
+                            Cu ajutorul unei baze de date de peste 3,5 milioane produse alimentare/nealimentare, aplicația detectează și analizează
+                            lista de E-uri din alimentele tale preferate, oferind mesaje clare de avertizare privind substanțele potențial nocive.                        
+                        </p>
+                        <a href="#about" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Află Mai Multe</a>
+                        <a href="#privacy" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Politica de Confidențialitate</a>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Section End -->
+
+        <!-- Gallery Start -->
+        <div id="screenshots" class="container-xxl py-2">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Galerie</h2>
+                    <p>Descoperă funcționalitățile aplicației DaddyBusted!</p>
+                </div>
+                <div class="gallery">
+                    <img src="img/screenshot-1.jpg" alt="Screenshot 1">
+                    <img src="img/screenshot-2.jpg" alt="Screenshot 3">
+                    <img src="img/screenshot-3.jpg" alt="Screenshot 2">
+                    <img src="img/screenshot-5.jpg" alt="Screenshot 5">
+                </div>
+            </div>
+        </div>
+        <!-- Gallery End -->
+
+        <!-- Download Section Start -->
+        <div class="download-section">
+            <a href="https://play.google.com/store/apps/details?id=com.tatilacratita.daddybusted" class="download-button">
+                <img src="img/google.png" alt="Google Play"> Descarcă App
+            </a>
+        </div>
+        <!-- Download Section End -->
+
+         <!-- Află Mai Multe Start -->
+<div id="about" class="container-xxl py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center" style="color: #000000; font-weight: bold;">Află Mai Multe</h2>
+        <p class="text-center" style="color: #000000; font-size: 18px;">Aplicația DaddyBusted oferă mai mult decât o simplă identificare a E-urilor din alimentele tale. Descoperă funcționalitățile care fac cumpărăturile mai sigure și mai informate:</p>
+        <div class="row g-4 mt-4">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="feature-box p-4 border rounded">
+                    <img src="img/scan-icon.png" alt="Scan Icon" class="mb-3" style="width: 60px; height: auto;">
+                    <h5 class="text-primary">Scanare Rapidă</h5>
+                    <p style="color: #000000;">Scanează codurile de bare ale produselor alimentare direct de pe ambalaj și primește informații instantanee.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="feature-box p-4 border rounded">
+                    <img src="img/e-additives-icon.png" alt="E Additives Icon" class="mb-3" style="width: 60px; height: auto;">
+                    <h5 class="text-primary">Identificare Aditivi</h5>
+                    <p style="color: #000000;">Află detalii despre aditivii alimentari (E-uri) și nivelul lor de siguranță pentru consum.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="feature-box p-4 border rounded">
+                    <img src="img/allergens-icon.png" alt="Allergens Icon" class="mb-3" style="width: 60px; height: auto;">
+                    <h5 class="text-primary">Detectare Alergeni</h5>
+                    <p style="color: #000000;">Identifică potențialii alergeni din produsele scanate pentru a evita riscurile de sănătate.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="feature-box p-4 border rounded">
+                    <img src="img/nutriscore-icon.png" alt="NutriScore Icon" class="mb-3" style="width: 60px; height: auto;">
+                    <h5 class="text-primary">NutriScore</h5>
+                    <p style="color: #000000;">Obține NutriScore-ul produselor pentru o alimentație sănătoasă și echilibrată.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Află Mai Multe End -->
+
+
+<!-- Privacy Policy Start -->
+<div id="privacy" class="container-xxl py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title" style="color: #000000; font-weight: bold;">Politica de Confidențialitate</h2>
+        <p class="text-black pb-4 animated slideInDown" style="color: #000000; font-weight: bold;"></p>
+        <p style="color: #000000; font-weight: bold;"><strong>1. Introducere</strong></p>
+        <p style="color: #000000;">Aplicația DaddyBusted respectă confidențialitatea datelor tale și se angajează să protejeze informațiile tale personale. Această politică de confidențialitate descrie ce date colectăm, cum le utilizăm și cum le protejăm. Te rugăm să citești cu atenție această politică pentru a înțelege modul în care gestionăm informațiile tale.</p>
+
+        <p style="color: #000000; font-weight: bold;"><strong>2. Datele colectate</strong></p>
+        <p style="color: #000000;">Aplicația DaddyBusted nu colectează date personale de la utilizatori, cu excepția cazului în care acest lucru este necesar pentru funcționarea aplicației. În mod specific:</p>
+        <ul>
+            <li style="color: #000000; font-weight: bold;"><strong>Informații necesare pentru funcționarea aplicației:</strong> Aplicația poate colecta informații pentru a-ți oferi servicii de scanare a codurilor de bare ale produselor alimentare. Aceste date sunt preluate dintr-o bază de date internă și un API extern (OpenFood) pentru a verifica informațiile privind aditivii alimentari.</li>
+        </ul>
+
+        <p style="color: #000000; font-weight: bold;"><strong>3. Utilizarea unui API extern (OpenFood)</strong></p>
+        <p style="color: #000000;">Aplicația DaddyBusted folosește un API extern pentru a obține informații despre produsele alimentare și ingredientele acestora. OpenFood API furnizează informațiile necesare pentru analiza produselor scanate. API-ul OpenFood nu colectează date personale despre utilizatori, iar aplicația noastră nu partajează informațiile tale cu OpenFood.</p>
+
+        <p style="color: #000000; font-weight: bold;"><strong>4. Baza de date internă</strong></p>
+        <p style="color: #000000;">Aplicația folosește o bază de date internă pentru a stoca informațiile necesare procesării produselor alimentare și a aditivilor. Aceste informații sunt folosite exclusiv pentru a îmbunătăți experiența utilizatorului și pentru a oferi recomandări clare și precise privind substanțele potențial dăunătoare din produsele alimentare scanate.</p>
+
+        <p style="color: #000000; font-weight: bold;"><strong>5. Protecția datelor tale</strong></p>
+        <p style="color: #000000;">Aplicația DaddyBusted nu stochează sau partajează informațiile tale personale. Toate datele colectate sunt utilizate doar pentru scopurile menționate mai sus. Nu vindem, nu partajăm și nu închiriem informațiile tale cu terțe părți.</p>
+
+        <p style="color: #000000; font-weight: bold;"><strong>6. Modificări ale Politicii de Confidențialitate</strong></p>
+        <p style="color: #000000;">Ne rezervăm dreptul de a modifica această politică de confidențialitate din când în când. Orice modificare va fi publicată pe această pagină, iar data ultimei actualizări va fi indicată la finalul acesteia.</p>
+
+        <p style="color: #000000; font-weight: bold;"><strong>7. Contact</strong></p>
+        <p style="color: #000000;">Dacă ai întrebări sau nelămuriri cu privire la politica noastră de confidențialitate, nu ezita să ne contactezi la adresa de email: <a href="mailto:adresa@ta.com" style="color: #000000;">tatilacratita@gmail.com</a>.</p>
+
+        <p style="color: #000000; font-weight: bold;">Ultima actualizare: [09.12.2024]</p>
+    </div>
+</div>
+<!-- Privacy Policy End -->
+
+<!-- Footer Start -->
+<footer style="background-color: transparent; color: #6A4C9C; text-align: center; padding: 15px 0; width: 100%; font-weight: bold;">
+    <p style="margin: 0;">&copy; 2024 Toate drepturile rezervate de <a href="https://www.tatilacratita.com" style="color: #ffcc00; text-decoration: none;">Tati La Cratita</a>.</p>
+</footer>
+<!-- Footer End -->
+
+<!-- Scripts -->
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+</body>
+</html>
