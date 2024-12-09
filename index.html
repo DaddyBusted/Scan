@@ -3,6 +3,13 @@
 
 <head>
     <meta charset="utf-8">
+       <script>
+        // Verifică dacă URL-ul conține "www" și redirecționează la varianta fără "www"
+        if (window.location.hostname.startsWith("www")) {
+            const newUrl = "https://" + window.location.hostname.replace(/^www\./, "") + window.location.pathname + window.location.search;
+            window.location.replace(newUrl);
+        }
+    </script>
     <title>DaddyBusted - Aplicație Scanare Coduri de Bare</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
