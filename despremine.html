@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DaddyBusted </title>
+    <title>DaddyBusted</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -25,6 +25,48 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Optimizarea imaginii pentru mobil */
+        .daddybusted-logo {
+            width: 30px;
+            height: 40px;
+            border-radius: 30%;
+        }
+
+        .section-title {
+            color: #000000;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Stilizare poză pentru "Despre Mine" */
+        .about-image {
+            width: 100%; /* Setează lățimea imaginii pe 100% pe mobil */
+            max-width: 400px; /* Limitează lățimea imaginii pe desktop */
+            height: auto;
+            float: right;
+            margin: 0 0 10px 10px;
+            border-radius: 20%;
+        }
+
+        /* Media query pentru ecrane mici */
+        @media (max-width: 768px) {
+            .about-image {
+                max-width: 300px; /* Redu lățimea pe dispozitivele mai mici */
+                margin: 0 auto 10px; /* Centrează imaginea pe mobil */
+                float: none; /* Elimină float-ul pentru a centra imaginea */
+            }
+
+            .navbar {
+                padding: 15px; /* Reducerea padding-ului la navbar pe mobil */
+            }
+
+            .navbar-brand h1 {
+                font-size: 1.5rem; /* Micșorează dimensiunea titlului */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -35,7 +77,7 @@
                 <div class="container d-flex align-items-center">
                     <a href="#" class="navbar-brand d-flex align-items-center">
                         <h1 class="m-0">Despre Mine</h1>
-                        <img src="img/daddybusted.png" alt="Logo DaddyBusted" class="daddybusted-logo ms-2" style="width: 30px; height: 40px; border-radius: 30% ">
+                        <img src="img/daddybusted.png" alt="Logo DaddyBusted" class="daddybusted-logo ms-2">
                     </a>
                 </div>
             </nav>
@@ -74,9 +116,9 @@
         <!-- Despre Mine End -->
         
         <!-- Footer Start -->
-       <footer style="color: #8F12FD; text-align: center; padding: 15px 0; width: 100%; font-weight: bold;background-color:transparent;">
-      <p style="margin: 0;">&copy; 2024 Toate drepturile rezervate de <a href="https://www.tatilacratita.com" style="color: #ffcc00; text-decoration: none;">Tati La Cratita</a>.</p>
-       </footer>
+        <footer style="color: #8F12FD; text-align: center; padding: 15px 0; width: 100%; font-weight: bold;background-color:transparent;">
+            <p style="margin: 0;">&copy; 2024 Toate drepturile rezervate de <a href="https://www.tatilacratita.com" style="color: #ffcc00; text-decoration: none;">Tati La Cratita</a>.</p>
+        </footer>
         <!-- Footer End -->
     </div>
 </body>
