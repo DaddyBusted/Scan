@@ -33,29 +33,29 @@
     <!-- Custom Styles -->
     <style>
         .daddybusted-logo {
-            width: 30px; /* Ajustează dimensiunea imaginii */
-            height: 50px; /* Menține proporțiile */
-            object-fit: cover; /* Ajustează imaginea fără distorsiuni */
-            margin-left: 30px; /* Spațiu între titlu și imagine */
-            border-radius: 30%; /* Rotunjirea marginilor */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adaugă un efect de umbră */
-            transition: transform 0.3s ease; /* Adaugă o tranziție pe hover */
+            width: 30px;
+            height: 50px;
+            object-fit: cover;
+            margin-left: 30px;
+            border-radius: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
         }
 
         .daddybusted-logo:hover {
-            transform: scale(1.2); /* Mărește imaginea pe hover */
+            transform: scale(1.2);
         }
 
         .gallery {
-            display: flex; /* Flexbox pentru rânduri */
-            flex-wrap: wrap; /* Permite împachetarea pe rânduri */
-            gap: 20px; /* Spațiu între imagini */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
             margin-top: 20px;
-            justify-content: center; /* Aliniază imaginile la centru */
+            justify-content: center;
         }
 
         .gallery img {
-            width: 250px; /* Dimensiunea standard a imaginilor */
+            width: 250px;
             height: auto;
             border-radius: 18px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -69,13 +69,18 @@
 
         @media (max-width: 768px) {
             .gallery img {
-                width: 200px; /* Ajustează dimensiunea pentru tablete */
+                width: 200px;
+            }
+
+            .hero-header {
+                padding-top: 30px;
+                margin-top: -115px;  
             }
         }
 
         @media (max-width: 480px) {
             .gallery img {
-                width: 150px; /* Ajustează dimensiunea pentru telefoane */
+                width: 150px;
             }
         }
 
