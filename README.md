@@ -1,6 +1,6 @@
 📱 DaddyBusted - Scanare Coduri de Bare pentru Sănătatea Ta
 🌟 Despre aplicație
-DaddyBusted este o aplicație revoluționară concepută pentru a te ajuta să faci alegeri mai sănătoase și mai informate în ceea ce privește alimentația. Cu ajutorul tehnologiei de scanare a codurilor de bare, aplicația analizează rapid și eficient produsele alimentare și nealimentare, oferindu-ți informații clare și utile despre:
+DaddyBuste este o aplicație simplă ,dar eficientă, creată pentru a te ajuta să faci alegeri mai sănătoase și mai informate în ceea ce privește alimentația. Cu ajutorul tehnologiei de scanare a codurilor de bare, aplicația analizează rapid și eficient produsele alimentare și nealimentare, oferindu-ți informații clare și utile despre:
 
 🛑 E-uri și aditivi alimentari periculoși: Identificarea substanțelor chimice din produsele procesate care pot avea un impact negativ asupra sănătății tale.
 ⚠️ Alergeni: Alergiile alimentare pot fi extrem de periculoase; DaddyBusted îți arată ce produse conțin alergeni comuni.
@@ -30,6 +30,7 @@ Actualizări constante: Informațiile sunt mereu la zi, pentru a fi sigure și r
 Limbaj de programare: Kotlin și Java.
 Framework: Retrofit pentru API și integrarea bazelor de date de produse.
 API-ul Open Food Facts: Oferă acces la date extinse despre produse și ingrediente.
+Bază de date Json internă cu produse din Romania
 📥 Cum descarc aplicația?
 DaddyBusted este disponibilă pe Google Play Store:
 Descarcă acum
